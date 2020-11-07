@@ -5,8 +5,8 @@ class Mahasiswa extends CI_Controller {
 
 	public function index()
 	{
-		$data['nama_lengkap'] = "romi choirudin";
-		$data['jenis_kelamin'] = "laki laki";
+		$data['nama_lengkap'] = "Ni made ayuningsih";
+		$data['jenis_kelamin'] = "perempuan";
 		$data['nim'] = 1810330027;
 		$mahasiswa[0] = array(
 			'nim' => 12345,

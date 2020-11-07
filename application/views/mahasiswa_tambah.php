@@ -2,20 +2,30 @@
 <html>
 <head>
 	<title>mahasiswa</title>
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/bootstrap.min.css')?>">
 </head>
 <body>
-<h1> Tambah Mahasiswa</h1>
-<a href="">Kembali</a>
+	
+	<div class="p-5 mb-7 bg-whitw text-black"> <b>TAMBAH  MAHASISWA</b>
 <hr>
-<form>
-	<h5>Nim</h5>
-	<input type="number" name="nim"> <br>
+<form action="#" method="post">
+	<div class="form-group col-md-4">
+	<label>Nim :</label>
+	<input type="number" name="nim" class="form-control"> <br>
+	</div>
 
-	<h5>Nama Mahasiswa</h5>
-	<input type="text" name="nama_mahasiswa"> <br>
+	<div class="form-group col-md-6">
+	<label>Nama Mahasiswa :</label>
+	<input type="text" name="nama_mahasiswa" class="form-control"> <br>
 
-	<input type="submit" name="submit" value="Simpan">
+
+    <label>Alamat:</label>
+    <textarea class="form-control" rows="5"></textarea> 
+    <br>
+    </div>
+	<input type="submit" class="btn btn-primary" name="submit" value="Simpan">
+	<a href="<?= site_url('mahasiswa')?>" class="white-link">Kembali</a>
+	</div>
 </form>
-
 </body>
 </html>
